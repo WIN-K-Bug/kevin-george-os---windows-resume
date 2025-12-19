@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Kevin George OS — Windows Resume 🪟
 
-# Run and deploy your AI Studio app
+An interactive, Windows-OS–inspired resume website where each resume section behaves like a desktop application.  
+Users can explore my profile by opening, moving, and interacting with program-style windows, creating a familiar and engaging desktop experience.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/1n1O7VhCtkr4Y59-gniE8YT_wjf9vWqnl
+## ✨ Features
 
-## Run Locally
+- 🪟 Windows-style desktop UI  
+- 📂 Resume sections as desktop applications  
+- 🖱️ Draggable, closable windows  
+- 📌 Taskbar & Start-menu inspired navigation  
+- ⚡ Smooth animations and interactions  
+- 📱 Responsive across desktop, tablet, and mobile devices  
 
-**Prerequisites:**  Node.js
+---
 
+## 🛠️ Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Frontend:** React + TypeScript  
+- **Build Tool:** Vite  
+- **Styling:** CSS  
+- **Version Control:** Git & GitHub  
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
