@@ -376,17 +376,17 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen w-screen desktop-bg relative overflow-x-hidden md:overflow-hidden text-white/80 pb-16">
+    <div className="min-h-[100dvh] w-screen desktop-bg relative overflow-x-hidden text-white/80 pb-16">
       <div className="absolute -top-24 -left-10 w-72 h-72 bg-blue-500/25 blur-3xl rounded-full pointer-events-none" />
-      <div className="absolute top-8 left-1/2 -translate-x-1/2 max-w-md w-[90%] text-center space-y-3 pointer-events-none md:left-auto md:right-10 md:translate-x-0 md:text-right">
+      <div className="relative mx-auto w-[92%] max-w-xl text-center space-y-3 pt-12 pb-6 pointer-events-none md:pointer-events-none md:absolute md:top-8 md:right-10 md:mx-0 md:max-w-md md:text-right md:pt-0 md:pb-0">
         <p className="uppercase tracking-[0.55em] text-white/60 text-xs sm:text-[13px]">Kevin George OS</p>
         <h1 className="text-3xl sm:text-4xl font-semibold text-white/90 leading-tight">Launch the windows to explore my journey.</h1>
         <p className="text-sm sm:text-base text-white/75">Double-tap or double-click an app icon to explore a window. Minimised windows stay in the taskbar ready to restore.</p>
       </div>
 
       {/* Desktop Icons */}
-      <div className="min-h-[calc(100vh-72px)] px-4 pt-28 pb-24 sm:px-6 md:pt-6 lg:px-10 xl:px-16">
-        <div className="mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6 gap-y-8 w-full max-w-6xl place-items-center md:place-items-start">
+      <div className="min-h-[calc(100vh-72px)] px-4 pt-6 sm:pt-10 md:pt-28 pb-20 sm:px-6 lg:px-10 xl:px-16 2xl:px-20">
+        <div className="mx-auto md:mx-0 md:mr-auto grid w-full max-w-6xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 items-start justify-items-center md:justify-items-start md:pr-40 lg:pr-52 xl:pr-64 2xl:pr-72">
           {windows.map((windowConfig) => (
             <DesktopIcon
               key={windowConfig.id}

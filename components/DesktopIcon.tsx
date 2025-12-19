@@ -12,7 +12,7 @@ interface DesktopIconProps {
 const DesktopIcon: React.FC<DesktopIconProps> = ({ id, title, icon, onClick }) => {
   return (
     <div
-      className="desktop-icon-card w-full max-w-[230px] sm:w-32 m-3 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-200/80 focus-visible:ring-offset-2 focus-visible:ring-offset-white/70"
+      className="desktop-icon-card w-full max-w-[170px] sm:w-24 m-2.5 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-200/80 focus-visible:ring-offset-2 focus-visible:ring-offset-white/70"
       onDoubleClick={() => onClick(id)}
       onTouchEnd={() => onClick(id)}
       onKeyDown={(event) => {
